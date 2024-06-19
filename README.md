@@ -2,7 +2,7 @@
 
 ///--------- THIS IS A WORK IN PROGRESS ----------///
 
-![CipherChat Logo](docs/assets/logo.png =80x80)
+<img src="docs/assets/logo.png" width="100" alt="CipherChat logo">
 
 CipherChat is a highly secure, serverless messaging application designed for maximum privacy. Users can send encrypted messages directly to their trusted contacts without relying on any central servers. The application features end-to-end encryption, secure local storage, and a user-friendly pairing process via QR codes.
 
