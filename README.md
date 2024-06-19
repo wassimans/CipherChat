@@ -14,6 +14,15 @@ CipherChat is a highly secure, serverless messaging application designed for max
 - **QR Code Pairing**: Users can easily add trusted contacts by scanning QR codes.
 - **Cross-Platform**: Available for both iOS and Android, with a shared Rust library for core cryptographic functions.
 
+## Technical Highlights
+
+CipherChat leverages Rust for its core cryptographic and networking operations, encapsulated in a shared library used by both the iOS and Android applications. This approach was chosen for several reasons:
+
+- **Performance and Safety**: Rust offers memory safety guarantees without a garbage collector, making it an ideal choice for performance-critical and secure applications.
+- **Code Reusability**: By using a shared Rust library, we ensure that critical code is written once and reused across both platforms, reducing the potential for bugs and inconsistencies.
+- **Cross-Platform Development**: Rust’s ability to compile to native code for both iOS and Android streamlines the development process and ensures that the security and cryptographic features are consistent across platforms.
+- **FFI (Foreign Function Interface)**: Rust’s robust FFI support allows seamless integration with Swift on iOS and Kotlin on Android, enabling us to build a unified codebase while leveraging platform-specific features and optimizations.
+
 ## Project Structure
 
 ```
