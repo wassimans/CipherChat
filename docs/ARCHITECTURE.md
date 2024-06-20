@@ -56,142 +56,22 @@
 ### Detailed Descriptions
 
 #### Diagram 1: Overall Architecture
-```
-+------------------+       +------------------+
-|                  |       |                  |
-|   iOS App        |       |  Android App     |
-|                  |       |                  |
-| +--------------+ |       | +--------------+ |
-| |  SwiftUI     | |       | | Jetpack      | |
-| |              | |       | | Compose      | |
-| +--------------+ |       | +--------------+ |
-|     |    ^       |       |     |    ^       |
-|     v    |       |       |     v    |       |
-| +--------------+ |       | +--------------+ |
-| | Rust Library | |       | | Rust Library | |
-| +--------------+ |       | +--------------+ |
-|     |    ^       |       |     |    ^       |
-+-----|----|-------+       +-----|----|-------+
-      |    |                   |    |
-      v    |                   v    |
-+-------------------+    +-------------------+
-|  Local Storage    |    |  Local Storage    |
-| (SQLCipher)       |    | (SQLCipher)       |
-+-------------------+    +-------------------+
-```
+
+<p align="center">
+    <img src="docs/assets/overall-architecture.png" width="400" alt="Overall architecture">
+</p>
 
 #### Diagram 2: Data Flow
-```
-+------------+
-| User A     |
-| (iOS/Android)   |
-+------------+
-     |
-     v
-+------------+
-| Generate   |
-| Keys       |
-+------------+
-     |
-     v
-+------------+
-| Store Keys |
-| Locally    |
-+------------+
-     |
-     v
-+------------+
-| Generate QR|
-| Code       |
-+------------+
-     |
-     v
-+------------+
-| Scan QR    |
-| Code       |
-+------------+
-     |
-     v
-+------------+
-| Exchange   |
-| Public Keys|
-+------------+
-     |
-     v
-+------------+
-| Encrypt    |
-| Message    |
-+------------+
-     |
-     v
-+------------+
-| P2P        |
-| Messaging  |
-+------------+
-     |
-     v
-+------------+
-| Decrypt    |
-| Message    |
-+------------+
-     |
-     v
-+------------+
-| Display    |
-| Message    |
-+------------+
-     |
-     v
-+------------+
-| Store      |
-| Message    |
-| Locally    |
-+------------+
-```
+
+<p align="center">
+    <img src="docs/assets/data-flow.png" width="400" alt="Data flow">
+</p>
 
 ### Data Store and State Management
 
-#### Diagram 3: State Management
-```
-+------------------------+
-|        App State       |
-+------------------------+
-| User Information       |
-| Paired Contacts        |
-| Messages               |
-+------------------------+
-       |
-       v
-+------------------------+
-|    Local Storage       |
-+------------------------+
-| Encrypted User Data    |
-| Encrypted Keys         |
-| Encrypted Messages     |
-+------------------------+
-```
-
-#### Diagram 4: Local Storage
-```
-+----------------------+
-| Local Storage (iOS)  |
-| (SQLCipher)          |
-+----------------------+
-| User Info            |
-| Paired Keys          |
-| Messages             |
-+----------------------+
-       |
-       v
-+----------------------+
-| Local Storage (Android)|
-| (SQLCipher)           |
-+----------------------+
-| User Info            |
-| Paired Keys          |
-| Messages             |
-+----------------------+
-```
+<p align="center">
+    <img src="docs/assets/data-store.png" width="400" alt="Data store">
+</p >
 
 ### Summary
 
