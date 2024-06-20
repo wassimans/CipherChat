@@ -1,11 +1,11 @@
-# CipherChat
+# PEEM
 
 ///--------- THIS IS A WORK IN PROGRESS ----------///
 <p align="center">
-    <img src="docs/assets/logo.png" width="200" alt="CipherChat logo">
+    <img src="docs/assets/logo.jpg" width="200" alt="PEEM logo">
 </p>
 
-CipherChat is a highly secure, serverless messaging application designed for maximum privacy. Users can send encrypted messages directly to their trusted contacts without relying on any central servers. The application features end-to-end encryption, secure local storage, and a user-friendly pairing process via QR codes.
+PEEM is a highly secure, serverless messaging application designed for maximum privacy. Users can send encrypted messages directly to their trusted contacts without relying on any central servers. The application features end-to-end encryption, secure local storage, and a user-friendly pairing process via QR codes.
 
 ## Features
 
@@ -17,7 +17,7 @@ CipherChat is a highly secure, serverless messaging application designed for max
 
 ## Technical Highlights
 
-CipherChat leverages Rust for its core cryptographic and networking operations, encapsulated in a shared library used by both the iOS and Android applications. This approach was chosen for several reasons:
+PEEM leverages Rust for its core cryptographic and networking operations, encapsulated in a shared library used by both the iOS and Android applications. This approach was chosen for several reasons:
 
 - **Performance and Safety**: Rust offers memory safety guarantees without a garbage collector, making it an ideal choice for performance-critical and secure applications.
 - **Code Reusability**: By using a shared Rust library, we ensure that critical code is written once and reused across both platforms, reducing the potential for bugs and inconsistencies.
@@ -29,7 +29,7 @@ For more detailed information on the architecture of the project, read the [ARCH
 ## Project Structure
 
 ```
-CipherChat/
+PEEM/
 ├── rust_lib/                 # Rust shared library
 │   ├── src/
 │   │   ├── lib.rs
@@ -39,12 +39,12 @@ CipherChat/
 │   ├── Cargo.toml
 │   └── Cargo.lock
 ├── ios_app/                  # iOS app
-│   ├── CipherChat/
+│   ├── PEEM/
 │   │   ├── AppDelegate.swift
 │   │   ├── ContentView.swift
 │   │   ├── QRCodeScanner.swift
 │   │   └── ...               # Other SwiftUI views and controllers
-│   ├── CipherChat.xcodeproj/
+│   ├── PEEM.xcodeproj/
 │   ├── rust_lib_bridge/      # Rust to Swift bindings
 │   │   ├── rust_lib.h
 │   │   └── rust_lib.swift
@@ -92,8 +92,8 @@ CipherChat/
 
 1. **Clone the Repository**:
    ```sh
-   git clone https://github.com/wassimans/CipherChat.git
-   cd CipherChat
+   git clone https://github.com/wassimans/PEEM.git
+   cd PEEM
    ```
 
 2. **Build the Rust Library**:
@@ -103,7 +103,7 @@ CipherChat/
    ```
 
 3. **Set Up iOS App**:
-   - Open `ios_app/CipherChat.xcodeproj` in Xcode.
+   - Open `ios_app/PEEM.xcodeproj` in Xcode.
    - Configure the project settings as needed.
    - Build and run the project on a simulator or device.
 
