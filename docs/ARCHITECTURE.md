@@ -58,19 +58,19 @@
 #### Diagram 1: Overall Architecture
 
 <p align="center">
-    <img src="docs/assets/overall-architecture.png" width="400" alt="Overall architecture">
+    <img src="assets/overall-architecture.png" width="400" alt="Overall architecture">
 </p>
 
 #### Diagram 2: Data Flow
 
 <p align="center">
-    <img src="docs/assets/data-flow.png" width="400" alt="Data flow">
+    <img src="assets/data-flow.png" width="400" alt="Data flow">
 </p>
 
 ### Data Store and State Management
 
 <p align="center">
-    <img src="docs/assets/data-store.png" width="400" alt="Data store">
+    <img src="assets/data-store.png" width="400" alt="Data store">
 </p >
 
 ### Summary
