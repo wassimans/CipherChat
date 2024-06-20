@@ -1,8 +1,8 @@
-# PEEM
+# PEEM (Private Encrypted End-to-End Messaging)
 
 ///--------- THIS IS A WORK IN PROGRESS ----------///
 <p align="center">
-    <img src="docs/assets/logo.jpg" width="200" alt="PEEM logo">
+    <img src="docs/assets/logo.jpg" width="400" alt="PEEM logo">
 </p>
 
 PEEM is a highly secure, serverless messaging application designed for maximum privacy. Users can send encrypted messages directly to their trusted contacts without relying on any central servers. The application features end-to-end encryption, secure local storage, and a user-friendly pairing process via QR codes.
