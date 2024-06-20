@@ -24,6 +24,8 @@ CipherChat leverages Rust for its core cryptographic and networking operations, 
 - **Cross-Platform Development**: Rust’s ability to compile to native code for both iOS and Android streamlines the development process and ensures that the security and cryptographic features are consistent across platforms.
 - **FFI (Foreign Function Interface)**: Rust’s robust FFI support allows seamless integration with Swift on iOS and Kotlin on Android, enabling us to build a unified codebase while leveraging platform-specific features and optimizations.
 
+For more detailed information on the architecture of the project, read the [ARCHITECTURE overview](docs/ARCHITECTURE.md)
+
 ## Project Structure
 
 ```
