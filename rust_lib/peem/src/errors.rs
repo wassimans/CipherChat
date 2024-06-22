@@ -1,2 +1,0 @@
-/// Custom error types
-///
