@@ -1,11 +1,11 @@
-# PEEM (Private Encrypted End-to-End Messaging)
+# SPEEM (Serverless Private Encrypted End-to-End Messaging)
 
 ///--------- THIS IS A WORK IN PROGRESS ----------///
 <p align="center">
-    <img src="docs/assets/logo.jpg" width="400" alt="PEEM logo">
+    <img src="docs/assets/logo.jpg" width="400" alt="SPEEM logo">
 </p>
 
-PEEM is a highly secure, serverless messaging application designed for maximum privacy. Users can send encrypted messages directly to their trusted contacts without relying on any central servers. The application features end-to-end encryption, secure local storage, and a user-friendly pairing process via QR codes.
+SPEEM is a highly secure, serverless messaging application designed for maximum privacy. Users can send encrypted messages directly to their trusted contacts without relying on any central servers. The application features end-to-end encryption, secure local storage, and a user-friendly pairing process via QR codes.
 
 ## Features
 
@@ -17,7 +17,7 @@ PEEM is a highly secure, serverless messaging application designed for maximum p
 
 ## Technical Highlights
 
-PEEM leverages Rust for its core cryptographic and networking operations, encapsulated in a shared library used by both the iOS and Android applications. This approach was chosen for several reasons:
+SPEEM leverages Rust for its core cryptographic and networking operations, encapsulated in a shared library used by both the iOS and Android applications. This approach was chosen for several reasons:
 
 - **Performance and Safety**: Rust offers memory safety guarantees without a garbage collector, making it an ideal choice for performance-critical and secure applications.
 - **Code Reusability**: By using a shared Rust library, we ensure that critical code is written once and reused across both platforms, reducing the potential for bugs and inconsistencies.
@@ -29,7 +29,7 @@ For more detailed information on the architecture of the project, read the [ARCH
 ## Project Structure
 
 ```
-PEEM/
+SPEEM/
 ├── rust_lib/                 # Rust shared library
 │   ├── src/
 │   │   ├── lib.rs
@@ -39,12 +39,12 @@ PEEM/
 │   ├── Cargo.toml
 │   └── Cargo.lock
 ├── ios_app/                  # iOS app
-│   ├── PEEM/
+│   ├── SPEEM/
 │   │   ├── AppDelegate.swift
 │   │   ├── ContentView.swift
 │   │   ├── QRCodeScanner.swift
 │   │   └── ...               # Other SwiftUI views and controllers
-│   ├── PEEM.xcodeproj/
+│   ├── SPEEM.xcodeproj/
 │   ├── rust_lib_bridge/      # Rust to Swift bindings
 │   │   ├── rust_lib.h
 │   │   └── rust_lib.swift
@@ -92,8 +92,8 @@ PEEM/
 
 1. **Clone the Repository**:
    ```sh
-   git clone https://github.com/wassimans/PEEM.git
-   cd PEEM
+   git clone https://github.com/wassimans/SPEEM.git
+   cd SPEEM
    ```
 
 2. **Build the Rust Library**:
@@ -103,7 +103,7 @@ PEEM/
    ```
 
 3. **Set Up iOS App**:
-   - Open `ios_app/PEEM.xcodeproj` in Xcode.
+   - Open `ios_app/SPEEM.xcodeproj` in Xcode.
    - Configure the project settings as needed.
    - Build and run the project on a simulator or device.
 
