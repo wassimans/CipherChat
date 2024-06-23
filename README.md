@@ -1,6 +1,6 @@
 # SPEEM (Serverless Private Encrypted End-to-End Messaging)
 
-///--------- THIS IS A WORK IN PROGRESS ----------///
+IMPORTANT: project moved to it's own organization at https://github.com/SPEEM-App/speem-app
 <p align="center">
     <img src="docs/assets/logo.jpg" width="400" alt="SPEEM logo">
 </p>
